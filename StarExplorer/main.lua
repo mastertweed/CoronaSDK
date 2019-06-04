@@ -16,36 +16,31 @@ local sheetOptions =
 {
 	frames = 
 	{
-		{ 
-			-- asteroid 1
+		{ -- asteroid 1
 			x = 0,
 			y = 0,
 			width = 102,
 			height = 85
 		},
-		{
-			-- asteroid 2
+		{ -- asteroid 2
 			x = 0,
 			y = 168,
 			width = 90,
 			height = 83
 		},
-		{
-			-- asteroid 3
+		{ -- asteroid 3
 			x = 0,
 			y = 168,
 			width = 100,
 			height = 97
 		},
-		{
-			-- ship
+		{ -- ship
 			x = 0,
 			y = 265,
 			width = 98,
 			height = 79
 		},
-		{
-			-- laser
+		{ -- laser
 			x = 98,
 			y = 265,
 			width = 14,
@@ -53,9 +48,10 @@ local sheetOptions =
 		},
 	},
 }
+
 local objectSheet = graphics.newImageSheet( "gameObjects.png", sheetOptions )
 
-
+-- Counters
 local lives = 3
 local score = 0
 local died = false
